@@ -1,0 +1,205 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-content {
+    display: none; /* Hide all content by default */
+    color: rgba(210, 180, 140, 0.815);
+    margin-top: 240px;
+    position: absolute;
+  }
+  
+  .nav-content.active {
+    display: block; /* Show content when the 'active' class is applied */
+    
+}
+.navbar{
+    
+    
+    gap: 30px;
+    background-color: rgba(80, 80, 80, 0.322);
+    padding: 15px;
+    position: fixed;
+    z-index: 10;
+    margin-left: -25px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-btn{
+    border: none;
+    color: rgba(210, 180, 140, 0.815);
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    
+    
+    
+    
+}
+.menu-btn{
+   display: none;
+    
+}
+.para{
+    font-size: 30px;
+    text-align: center;
+    background-image: url(images/system.jpg);
+    height: 700px;
+    width: 100%;
+    background-repeat: no-repeat;
+    
+    
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    
+}
+
+
+.about-para{
+    font-size: 30px;
+    color: rgba(210, 180, 140, 0.815);
+    text-align: center;
+
+}
+.edu{
+    height: 500px;
+    width: 100%;
+    
+}
+.img-agu{
+    margin-left: 0px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+.img-div{
+    height: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 650px 0px ;
+    margin-left: 40px;
+}
+.img-project{
+    border: 2px solid rgba(210, 180, 140, 0.815);
+    /* height: 290px; */
+}
+.fa-github, .fa-linkedin{
+    font-size: 50px;
+    /* margin-left: 200px; */
+    color: rgba(210, 180, 140, 0.815);
+}
+.fa-github:hover{
+    color: white;
+}
+.fa-linkedin:hover{
+    color: white;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-para{
+    color:  rgba(210, 180, 140, 0.815);
+    font-size: 40px;
+    align-items: center;
+    margin-left: 550px;
+    
+}
+.onsite-para{
+    font-size: 30px;
+    margin-left: 450px;
+}
+.link-mail a{
+    font-size: 35px;
+    text-decoration: none;
+    color:  rgba(210, 180, 140, 0.815);
+    list-style: none;
+    margin-left: 500px;
+}
+
+.link-mail a:hover{
+    color: white;
+    /* font-size: 35px; */
+    /* margin-left: 480px; */
+}
+.link{
+    margin-top: 140px;
+    margin-left: 580px;
+    display: flex;
+    gap: 30px;
+}
+.fa-x-twitter{
+    font-size: 50px;
+    color:  rgba(210, 180, 140, 0.815);
+}
+.fa-x-twitter:hover{
+    color: white;
+}
+.fa-whatsapp{
+    font-size: 50px;
+    color:  rgba(210, 180, 140, 0.815);
+}
+.fa-whatsapp:hover{
+    color:white;
+}
+.fa-x{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+.navbar2{
+    position: fixed;
+    /* top: -20px; */
+    right: 0;
+    height: 100vh;
+    width: 350px;
+    z-index: 999;
+    background-color:rgba(255, 255, 255, 0.253);
+     box-shadow: -10px 0 10px black;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     backdrop-filter: blur(10px);
+     display: none;
+     gap: 40px;
+}
+.nav-btn-2{
+    border: none;
+    color:  rgba(210, 180, 140, 0.815);
+    background-color:transparent;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.nav-btn-2:hover{
+    width: 100%;
+    background-color: grey;
+    
+    
+}
+@media(max-width:800px){
+    .nav-btn{
+        display: none;
+    }    
+    .menu-btn{
+        display: block;
+    }
+}
+
+@media(max-width:450px){
+    .navbar2{
+        width: 100%;
+    }
+}
+@media(max-width:450px){
+    .nav-btn-2{
+        display: none;
+    }
+}
